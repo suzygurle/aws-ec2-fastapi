@@ -11,5 +11,5 @@ COPY main.py requirements.txt ./
 RUN python3 -m pip install -r requirements.txt
 
 # on launch
-CMD["python3", "-m", "uvicorn", \
+CMD ["python3", "-m", "uvicorn", \
 	"main:app", "--reload", "--host", "0.0.0.0", "--port", 8080]
